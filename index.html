@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Physics Formulas — The Complete Reference</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=DM+Mono:wght@400;500&family=DM+Sans:wght@300;400;500&display=swap"
+    rel="stylesheet">
+  <link href="physics.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <header>
+    <div class="header-glow"></div>
+    <div class="subtitle-tag">✦ Complete Reference</div>
+    <h1>Physics Formulas</h1>
+    <p class="header-desc">Every essential formula, organized by topic — from classical mechanics to quantum physics.
+    </p>
+    <div class="search-wrap">
+      <span class="search-icon">⌕</span>
+      <input type="text" id="searchInput" placeholder="Search formulas, topics, variables…">
+    </div>
+  </header>
+
+  <nav class="topic-nav">
+    <div class="topic-nav-inner">
+      <a class="nav-pill" href="#mechanics">Mechanics</a>
+      <a class="nav-pill" href="#thermodynamics">Thermodynamics</a>
+      <a class="nav-pill" href="#waves">Waves & Sound</a>
+      <a class="nav-pill" href="#em">Electromagnetism</a>
+      <a class="nav-pill" href="#optics">Optics</a>
+      <a class="nav-pill" href="#fluids">Fluids</a>
+      <a class="nav-pill" href="#gravity">Gravitation</a>
+      <a class="nav-pill" href="#modern">Modern Physics</a>
+      <a class="nav-pill" href="#nuclear">Nuclear Physics</a>
+      <a class="nav-pill" href="#relativity">Relativity</a>
+    </div>
+  </nav>
+
+  <main>
+    <div id="no-results">
+      <span class="emoji">🔭</span>
+      No formulas matched your search. Try different keywords.
+    </div>
+
+    <!-- ═══════════════════════════════ MECHANICS ═══ -->
+    <section class="topic" id="mechanics">
+      <div class="topic-header">
+        <div class="topic-icon ic-mechanics">⚙️</div>
+        <div class="topic-title">Classical Mechanics <span>Kinematics · Dynamics · Energy · Momentum</span></div>
+        <div class="topic-divider"></div>
+      </div>
+      <div class="formula-grid">
+        <div class="card">
+          <div class="card-name">Velocity</div>
+          <div class="card-formula">v = u + at</div>
+          <div class="card-desc">Final velocity from initial velocity under constant acceleration.</div>
+          <div class="card-vars"><span class="var-tag">v = final velocity</span><span class="var-tag">u = initial
+              velocity</span><span class="var-tag">a = acceleration</span><span class="var-tag">t = time</span></div>
+        </div>
+        <div class="card">
+          <div class="card-name">Displacement</div>
+          <div class="card-formula">s = ut + ½at²</div>
+          <div class="card-desc">Distance covered under uniform acceleration from rest or motion.</div>
+          <div class="card-vars"><span class="var-tag">s = displacement</span><span class="var-tag">u = initial
+              vel.</span><span class="var-tag">a = acceleration</span><span class="var-tag">t = time</span></div>
+        </div>
+        <div class="card">
+          <div class="card-name">Velocity–Displacement</div>
+          <div class="card-formula">v² = u² + 2as</div>
+          <div class="card-desc">Relates velocity and displacement without time.</div>
+          <div class="card-vars"><span class="var-tag">v = final vel.</span><span class="var-tag">u = initial
+              vel.</span><span class="var-tag">a = acceleration</span><span class="var-tag">s = displacement</span>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-name">Newton's 2nd Law</div>
+          <div class="card-formula">F = ma</div>
+          <div class="card-desc">Net force equals mass times acceleration.</div>
+          <div class="card-vars"><span class="var-tag">F = force (N)</span><span class="var-tag">m = mass
+              (kg)</span><span class="var-tag">a = acceleration (m/s²)</span></div>
+        </div>
+        <div class="card">
+          <div class="card-name">Weight</div>
+          <div class="card-formula">W = mg</div>
+          <div class="card-desc">Gravitational force on an object near Earth's surface.</div>
+          <div class="card-vars"><span class="var-tag">W = weight (N)</span><span class="var-tag">m = mass</span><span
+              class="var-tag">g ≈ 9.81 m/s²</span></div>
+        </div>
+        <div class="card">
+          <div class="card-name">Friction</div>
+          <div class="card-formula">f = μN</div>
+          <div class="card-desc">Frictional force between two surfaces in contact.</div>
+          <div class="card-vars"><span class="var-tag">μ = coefficient of friction</span><span class="var-tag">N =
+              normal force</span></div>
+        </div>
+        <div class="card">
+          <div class="card-name">Kinetic Energy</div>
+          <div class="card-formula">KE = ½mv²</div>
+          <div class="card-desc">Energy possessed by a body due to its motion.</div>
+          <div class="card-vars"><span class="var-tag">m = mass</span><span class="var-tag">v = velocity</span></div>
+        </div>
+        <div class="card">
+          <div class="card-name">Potential Energy</div>
+          <div class="card-formula">PE = mgh</div>
+          <div class="card-desc">Gravitational potential energy relative to a reference height.</div>
+          <div class="card-vars"><span class="var-tag">m = mass</span><span class="var-tag">g = gravity</span><span
+              class="var-tag">h = height</span></div>
+        </div>
+        <div class="card">
+          <div class="card-name">Work Done</div>
+          <div class="card-formula">W = Fd·cosθ</div>
+          <div class="card-desc">Work done by a force over a displacement at angle θ.</div>
+          <div class="card-vars"><span class="var-tag">F = force</span><span class="var-tag">d =
+              displacement</span><span class="var-tag">θ = angle</span></div>
+        </div>
+        <div class="card">
+          <div class="card-name">Power</div>
+          <div class="card-formula">P = W/t = Fv</div>
+          <div class="card-desc">Rate of doing work; also force times velocity.</div>
+          <div class="card-vars"><span class="var-tag">P = power (W)</span><span class="var-tag">W = work
+              (J)</span><span class="var-tag">t = time</span></div>
+        </div>
+        <div class="card">
+          <div class="card-name">Momentum</div>
+          <div class="card-formula">p = mv</div>
+          <div class="card-desc">Product of mass and velocity; conserved in closed systems.</div>
+          <div class="card-vars"><span class="var-tag">p = momentum</span><span class="var-tag">m = mass</span><span
+              class="var-tag">v = velocity</span></div>
+        </div>
+        <div class="card">
+          <div class="card-name">Impulse</div>
+          <div class="card-formula">J = FΔt = Δp</div>
+          <div class="card-desc">Change in momentum equals force times time interval.</div>
+          <div class="card-vars"><span class="var-tag">J = impulse</span><span class="var-tag">F = force</span><span
+              class="var-tag">Δt = time interval</span></div>
+        </div>
+        <div class="card">
+          <div class="card-name">Centripetal Acceleration</div>
+          <div class="card-formula">a꜀ = v²/r = ω²r</div>
+          <div class="card-desc">Acceleration directed toward center of circular path.</div>
+          <div class="card-vars"><span class="var-tag">v = velocity</span><span class="var-tag">r = radius</span><span
+              class="var-tag">ω = angular velocity</span></div>
+        </div>
+        <div class="card">
+          <div class="card-name">Torque</div>
+          <div class="card-formula">τ = rF·sinθ</div>
+          <div class="card-desc">Rotational equivalent of force; moment of a force about a pivot.</div>
+          <div class="card-vars"><span class="var-tag">r = lever arm</span><span class="var-tag">F = force</span><span
+              class="var-tag">θ = angle</span></div>
+        </div>
+        <div class="card">
+          <div class="card-name">Spring Force (Hooke's Law)</div>
+          <div class="card-formula">F = −kx</div>
+          <div class="card-desc">Restoring force of a spring proportional to extension.</div>
+          <div class="card-vars"><span class="var-tag">k = spring constant</span><span class="var-tag">x =
+              displacement</span></div>
+        </div>
+        <div class="card">
+          <div class="card-name">Elastic PE (Spring)</div>
+          <div class="card-formula">PE = ½kx²</div>
+          <div class="card-desc">Energy stored in a stretched or compressed spring.</div>
+          <div class="card-vars"><span class="var-tag">k = spring constant</span><span class="var-tag">x =
+              extension</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════ THERMODYNAMICS ═══ -->
+    <section class="topic" id="thermodynamics">
+      <div class="topic-header">
+        <div class="topic-icon ic-thermo">🔥</div>
+        <div class="topic-title">Thermodynamics <span>Heat · Temperature · Entropy · Gases</span></div>
+        <div class="topic-divider"></div>
+      </div>
+      <div class="formula-grid">
+        <div class="card">
+          <div class="card-name">Ideal Gas Law</div>
+          <div class="card-formula">PV = nRT</div>
+          <div class="card-desc">Relates pressure, volume, moles, and temperature of an ideal gas.</div>
+          <div class="card-vars"><span class="var-tag">P = pressure</span><span class="var-tag">V = volume</span><span
+              class="var-tag">n = moles</span><span class="var-tag">R = 8.314 J/mol·K</span></div>
+        </div>
+        <div class="card">
+          <div class="card-name">First Law of Thermodynamics</div>
+          <div class="card-formula">ΔU = Q − W</div>
+          <div class="card-desc">Change in internal energy equals heat added minus work done by system.</div>
+          <div class="card-vars"><span class="var-tag">ΔU = internal energy</span><span class="var-tag">Q =
+              heat</span><span class="var-tag">W = work</span></div>
+        </div>
+        <div class="card">
+          <div class="card-name">Heat Transfer (Conduction)</div>
+          <div class="card-formula">Q = mcΔT</div>
+          <div class="card-desc">Heat gained/lost by a substance during temperature change.</div>
+          <div class="card-vars"><span class="var-tag">m = mass</span><span class="var-tag">c = specific
+              heat</span><span class="var-tag">ΔT = temp. change</span></div>
+        </div>
+        <div class="card">
+          <div class="card-name">Thermal Conductivity</div>
+          <div class="card-formula">Q/t = kAΔT/d</div>
+          <div class="card-desc">Rate of heat flow through a material of thickness d.</div>
+          <div class="card-vars"><span class="var-tag">k = conductivity</span><span class="var-tag">A = area</span><span
+              class="var-tag">d = thickness</span></div>
+        </div>
+        <div class="card">
+          <div class="card-name">Efficiency of Heat Engine</div>
+          <div class="card-formula">η = 1 − T꜀/T_H</div>
+          <div class="card-desc">Carnot efficiency between hot and cold reservoirs.</div>
+          <div class="card-vars"><span class="var-tag">T_H = hot temp.</span><span class="var-tag">T꜀ = cold temp.
+              (K)</span></div>
+        </div>
+        <div class="card">
+          <div class="card-name">Entropy Change</div>
+          <div class="card-formula">ΔS = Q/T</div>
+          <div class="card-desc">Entropy change in a reversible process at temperature T.</div>
+          <div class="card-vars"><span class="var-tag">ΔS = entropy change</span><span class="var-tag">Q =
+              heat</span><span class="var-tag">T = temperature (K)</span></div>
+        </div>
+        <div class="card">
+          <div class="card-name">Stefan–Boltzmann Law</div>
+          <div class="card-formula">P = εσAT⁴</div>
+          <div class="card-desc">Power radiated by a blackbody surface.</div>
+          <div class="card-vars"><span class="var-tag">ε = emissivity</span><span class="var-tag">σ = 5.67×10⁻⁸
+              W/m²K⁴</span><span class="var-tag">A = area</span></div>
+        </div>
+        <div class="card">
+          <div class="card-name">Thermal Expansion</div>
+          <div class="card-formula">ΔL = αL₀ΔT</div>
+          <div class="card-desc">Linear expansion of a solid due to temperature rise.</div>
+          <div class="card-vars"><span class="var-tag">α = expansion coeff.</span><span class="var-tag">L₀ = original
+              length</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════ WAVES ═══ -->
+    <section class="topic" id="waves">
+      <div class="topic-header">
+        <div class="topic-icon ic-waves">〰️</div>
+        <div class="topic-title">Waves & Sound <span>Oscillations · Wave Properties · Acoustics</span></div>
+        <div class="topic-divider"></div>
+      </div>
+      <div class="formula-grid">
+        <div class="card">
+          <div class="card-name">Wave Speed</div>
+          <div class="card-formula">v = fλ</div>
+          <div class="card-desc">Wave speed equals frequency times wavelength.</div>
+          <div class="card-vars"><span class="var-tag">v = speed</span><span class="var-tag">f = frequency
+              (Hz)</span><span class="var-tag">λ = wavelength (m)</span></div>
+        </div>
+        <div class="card">
+          <div class="card-name">Period & Frequency</div>
+          <div class="card-formula">T = 1/f</div>
+          <div class="card-desc">Period is the reciprocal of frequency.</div>
+          <div class="card-vars"><span class="var-tag">T = period (s)</span><span class="var-tag">f = frequency
+              (Hz)</span></div>
+        </div>
+        <div class="card">
+          <div class="card-name">Simple Pendulum Period</div>
+          <div class="card-formula">T = 2π√(L/g)</div>
+          <div class="card-desc">Period of oscillation of a simple pendulum of length L.</div>
+          <div class="card-vars"><span class="var-tag">L = length</span><span class="var-tag">g = gravity</span></div>
+        </div>
+        <div class="card">
+          <div class="card-name">Spring-Mass Period</div>
+          <div class="card-formula">T = 2π√(m/k)</div>
+          <div class="card-desc">Period of a mass oscillating on a spring.</div>
+          <div class="card-vars"><span class="var-tag">m = mass</span><span class="var-tag">k = spring constant</span>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-name">Doppler Effect</div>
+          <div class="card-formula">f' = f(v ± v_o)/(v ∓ v_s)</div>
+          <div class="card-desc">Observed frequency shift when source or observer moves.</div>
+          <div class="card-vars"><span class="var-tag">v = wave speed</span><span class="var-tag">v_o = observer
+              speed</span><span class="var-tag">v_s = source speed</span></div>
+        </div>
+        <div class="card">
+          <div class="card-name">Sound Intensity Level</div>
+          <div class="card-formula">β = 10 log(I/I₀)</div>
+          <div class="card-desc">Decibel scale relative to threshold of hearing I₀ = 10⁻¹² W/m².</div>
+          <div class="card-vars"><span class="var-tag">β = dB level</span><span class="var-tag">I =
+              intensity</span><span class="var-tag">I₀ = 10⁻¹² W/m²</span></div>
+        </div>
+        <div class="card">
+          <div class="card-name">Standing Waves (String)</div>
+          <div class="card-formula">λₙ = 2L/n</div>
+          <div class="card-desc">Wavelengths of harmonics on a string fixed at both ends.</div>
+          <div class="card-vars"><span class="var-tag">L = string length</span><span class="var-tag">n = harmonic
+              number</span></div>
+        </div>
+        <div class="card">
+          <div class="card-name">Angular Frequency</div>
+          <div class="card-formula">ω = 2πf = 2π/T</div>
+          <div class="card-desc">Angular frequency relating cycles to radians per second.</div>
+          <div class="card-vars"><span class="var-tag">ω = angular freq.</span><span class="var-tag">f =
+              frequency</span><span class="var-tag">T = period</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════ ELECTROMAGNETISM ═══ -->
+    <section class="topic" id="em">
+      <div class="topic-header">
+        <div class="topic-icon ic-em">⚡</div>
+        <div class="topic-title">Electromagnetism <span>Electric Fields · Circuits · Magnetism · Induction</span></div>
+        <div class="topic-divider"></div>
+      </div>
+      <div class="formula-grid">
+        <div class="card">
+          <div class="card-name">Coulomb's Law</div>
+          <div class="card-formula">F = kq₁q₂/r²</div>
+          <div class="card-desc">Electrostatic force between two point charges.</div>
+          <div class="card-vars"><span class="var-tag">k = 8.99×10⁹ N·m²/C²</span><span class="var-tag">q =
+              charge</span><span class="var-tag">r = separation</span></div>
+        </div>
+        <div class="card">
+          <div class="card-name">Electric Field</div>
+          <div class="card-formula">E = F/q = kQ/r²</div>
+          <div class="card-desc">Force per unit positive charge; field of a point charge Q.</div>
+          <div class="card-vars"><span class="var-tag">E = field (N/C)</span><span class="var-tag">q = test
+              charge</span><span class="var-tag">r = distance</span></div>
+        </div>
+        <div class="card">
+          <div class="card-name">Ohm's Law</div>
+          <div class="card-formula">V = IR</div>
+          <div class="card-desc">Voltage equals current times resistance.</div>
+          <div class="card-vars"><span class="var-tag">V = voltage (V)</span><span class="var-tag">I = current
+              (A)</span><span class="var-tag">R = resistance (Ω)</span></div>
+        </div>
+        <div class="card">
+          <div class="card-name">Electrical Power</div>
+          <div class="card-formula">P = IV = I²R = V²/R</div>
+          <div class="card-desc">Power dissipated in a resistor.</div>
+          <div class="card-vars"><span class="var-tag">P = power (W)</span><span class="var-tag">I = current</span><span
+              class="var-tag">V = voltage</span></div>
+        </div>
+        <div class="card">
+          <div class="card-name">Capacitance</div>
+          <div class="card-formula">C = Q/V</div>
+          <div class="card-desc">Ratio of stored charge to voltage across a capacitor.</div>
+          <div class="card-vars"><span class="var-tag">C = capacitance (F)</span><span class="var-tag">Q =
+              charge</span><span class="var-tag">V = voltage</span></div>
+        </div>
+        <div class="card">
+          <div class="card-name">Energy in Capacitor</div>
+          <div class="card-formula">E = ½CV²</div>
+          <div class="card-desc">Energy stored in a charged capacitor.</div>
+          <div class="card-vars"><span class="var-tag">C = capacitance</span><span class="var-tag">V = voltage</span>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-name">Magnetic Force on Charge</div>
+          <div class="card-formula">F = qv × B</div>
+          <div class="card-desc">Lorentz magnetic force on a moving charge.</div>
+          <div class="card-vars"><span class="var-tag">q = charge</span><span class="var-tag">v = velocity</span><span
+              class="var-tag">B = magnetic field</span></div>
+        </div>
+        <div class="card">
+          <div class="card-name">Magnetic Force on Wire</div>
+          <div class="card-formula">F = BIL·sinθ</div>
+          <div class="card-desc">Force on a current-carrying conductor in a magnetic field.</div>
+          <div class="card-vars"><span class="var-tag">B = field</span><span class="var-tag">I = current</span><span
+              class="var-tag">L = length</span></div>
+        </div>
+        <div class="card">
+          <div class="card-name">Faraday's Law</div>
+          <div class="card-formula">ε = −dΦ/dt</div>
+          <div class="card-desc">EMF induced equals the negative rate of change of magnetic flux.</div>
+          <div class="card-vars"><span class="var-tag">ε = EMF</span><span class="var-tag">Φ = magnetic flux</span><span
+              class="var-tag">t = time</span></div>
+        </div>
+        <div class="card">
+          <div class="card-name">Magnetic Flux</div>
+          <div class="card-formula">Φ = BA·cosθ</div>
+          <div class="card-desc">Flux through a surface of area A in field B at angle θ.</div>
+          <div class="card-vars"><span class="var-tag">B = field</span><span class="var-tag">A = area</span><span
+              class="var-tag">θ = angle</span></div>
+        </div>
+        <div class="card">
+          <div class="card-name">Resistors in Series</div>
+          <div class="card-formula">R_total = R₁ + R₂ + …</div>
+          <div class="card-desc">Total resistance of resistors connected end-to-end.</div>
+          <div class="card-vars"><span class="var-tag">R = resistance (Ω)</span></div>
+        </div>
+        <div class="card">
+          <div class="card-name">Resistors in Parallel</div>
+          <div class="card-formula">1/R = 1/R₁ + 1/R₂ + …</div>
+          <div class="card-desc">Combined resistance of parallel resistors.</div>
+          <div class="card-vars"><span class="var-tag">R = resistance (Ω)</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════ OPTICS ═══ -->
+    <section class="topic" id="optics">
+      <div class="topic-header">
+        <div class="topic-icon ic-optics">🔬</div>
+        <div class="topic-title">Optics <span>Reflection · Refraction · Lenses · Light</span></div>
+        <div class="topic-divider"></div>
+      </div>
+      <div class="formula-grid">
+        <div class="card">
+          <div class="card-name">Snell's Law</div>
+          <div class="card-formula">n₁sinθ₁ = n₂sinθ₂</div>
+          <div class="card-desc">Refraction at the interface between two media.</div>
+          <div class="card-vars"><span class="var-tag">n = refractive index</span><span class="var-tag">θ = angle to
+              normal</span></div>
+        </div>
+        <div class="card">
+          <div class="card-name">Lens Formula</div>
+          <div class="card-formula">1/f = 1/v − 1/u</div>
+          <div class="card-desc">Relates focal length, image distance, and object distance for a thin lens.</div>
+          <div class="card-vars"><span class="var-tag">f = focal length</span><span class="var-tag">v = image
+              dist.</span><span class="var-tag">u = object dist.</span></div>
+        </div>
+        <div class="card">
+          <div class="card-name">Magnification</div>
+          <div class="card-formula">m = v/u = h_i/h_o</div>
+          <div class="card-desc">Ratio of image size to object size.</div>
+          <div class="card-vars"><span class="var-tag">v = image dist.</span><span class="var-tag">u = object
+              dist.</span><span class="var-tag">h = height</span></div>
+        </div>
+        <div class="card">
+          <div class="card-name">Refractive Index</div>
+          <div class="card-formula">n = c/v</div>
+          <div class="card-desc">Ratio of speed of light in vacuum to speed in medium.</div>
+          <div class="card-vars"><span class="var-tag">c = 3×10⁸ m/s</span><span class="var-tag">v = speed in
+              medium</span></div>
+        </div>
+        <div class="card">
+          <div class="card-name">Mirror Equation</div>
+          <div class="card-formula">1/f = 1/d_o + 1/d_i</div>
+          <div class="card-desc">Relationship for concave/convex mirrors.</div>
+          <div class="card-vars"><span class="var-tag">f = focal length</span><span class="var-tag">d_o = object
+              dist.</span><span class="var-tag">d_i = image dist.</span></div>
+        </div>
+        <div class="card">
+          <div class="card-name">Diffraction Grating</div>
+          <div class="card-formula">dsinθ = mλ</div>
+          <div class="card-desc">Condition for constructive interference from a diffraction grating.</div>
+          <div class="card-vars"><span class="var-tag">d = slit spacing</span><span class="var-tag">m =
+              order</span><span class="var-tag">λ = wavelength</span></div>
+        </div>
+        <div class="card">
+          <div class="card-name">Double Slit (Bright Fringes)</div>
+          <div class="card-formula">y = mλD/d</div>
+          <div class="card-desc">Position of bright fringes in Young's double-slit experiment.</div>
+          <div class="card-vars"><span class="var-tag">D = screen dist.</span><span class="var-tag">d = slit
+              sep.</span><span class="var-tag">m = fringe order</span></div>
+        </div>
+        <div class="card">
+          <div class="card-name">Power of a Lens</div>
+          <div class="card-formula">P = 1/f</div>
+          <div class="card-desc">Lens power in dioptres (D) for focal length in metres.</div>
+          <div class="card-vars"><span class="var-tag">P = power (D)</span><span class="var-tag">f = focal length
+              (m)</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════ FLUIDS ═══ -->
+    <section class="topic" id="fluids">
+      <div class="topic-header">
+        <div class="topic-icon ic-fluids">💧</div>
+        <div class="topic-title">Fluid Mechanics <span>Pressure · Buoyancy · Flow · Viscosity</span></div>
+        <div class="topic-divider"></div>
+      </div>
+      <div class="formula-grid">
+        <div class="card">
+          <div class="card-name">Pressure</div>
+          <div class="card-formula">P = F/A</div>
+          <div class="card-desc">Pressure exerted by a force over an area.</div>
+          <div class="card-vars"><span class="var-tag">P = pressure (Pa)</span><span class="var-tag">F =
+              force</span><span class="var-tag">A = area</span></div>
+        </div>
+        <div class="card">
+          <div class="card-name">Hydrostatic Pressure</div>
+          <div class="card-formula">P = P₀ + ρgh</div>
+          <div class="card-desc">Pressure at depth h in a fluid of density ρ.</div>
+          <div class="card-vars"><span class="var-tag">ρ = density</span><span class="var-tag">g = gravity</span><span
+              class="var-tag">h = depth</span></div>
+        </div>
+        <div class="card">
+          <div class="card-name">Buoyancy (Archimedes)</div>
+          <div class="card-formula">F_b = ρVg</div>
+          <div class="card-desc">Upward force on a submerged object equals weight of displaced fluid.</div>
+          <div class="card-vars"><span class="var-tag">ρ = fluid density</span><span class="var-tag">V = volume
+              displaced</span></div>
+        </div>
+        <div class="card">
+          <div class="card-name">Continuity Equation</div>
+          <div class="card-formula">A₁v₁ = A₂v₂</div>
+          <div class="card-desc">Conservation of mass in incompressible flow.</div>
+          <div class="card-vars"><span class="var-tag">A = cross-section</span><span class="var-tag">v = fluid
+              velocity</span></div>
+        </div>
+        <div class="card">
+          <div class="card-name">Bernoulli's Equation</div>
+          <div class="card-formula">P + ½ρv² + ρgh = const</div>
+          <div class="card-desc">Energy conservation in steady, incompressible flow.</div>
+          <div class="card-vars"><span class="var-tag">P = pressure</span><span class="var-tag">ρ = density</span><span
+              class="var-tag">v = speed</span></div>
+        </div>
+        <div class="card">
+          <div class="card-name">Density</div>
+          <div class="card-formula">ρ = m/V</div>
+          <div class="card-desc">Mass per unit volume of a substance.</div>
+          <div class="card-vars"><span class="var-tag">ρ = density (kg/m³)</span><span class="var-tag">m =
+              mass</span><span class="var-tag">V = volume</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════ GRAVITY ═══ -->
+    <section class="topic" id="gravity">
+      <div class="topic-header">
+        <div class="topic-icon ic-gravity">🪐</div>
+        <div class="topic-title">Gravitation <span>Newton's Law · Orbits · Escape Velocity</span></div>
+        <div class="topic-divider"></div>
+      </div>
+      <div class="formula-grid">
+        <div class="card">
+          <div class="card-name">Newton's Law of Gravitation</div>
+          <div class="card-formula">F = Gm₁m₂/r²</div>
+          <div class="card-desc">Gravitational attractive force between two masses.</div>
+          <div class="card-vars"><span class="var-tag">G = 6.674×10⁻¹¹ N·m²/kg²</span><span class="var-tag">m =
+              masses</span><span class="var-tag">r = separation</span></div>
+        </div>
+        <div class="card">
+          <div class="card-name">Gravitational Field Strength</div>
+          <div class="card-formula">g = GM/r²</div>
+          <div class="card-desc">Field strength at distance r from a mass M.</div>
+          <div class="card-vars"><span class="var-tag">G = gravitational const.</span><span class="var-tag">M =
+              mass</span><span class="var-tag">r = distance</span></div>
+        </div>
+        <div class="card">
+          <div class="card-name">Orbital Speed</div>
+          <div class="card-formula">v = √(GM/r)</div>
+          <div class="card-desc">Speed needed for circular orbit at radius r.</div>
+          <div class="card-vars"><span class="var-tag">G = const.</span><span class="var-tag">M = central
+              mass</span><span class="var-tag">r = orbit radius</span></div>
+        </div>
+        <div class="card">
+          <div class="card-name">Orbital Period (Kepler 3rd)</div>
+          <div class="card-formula">T² = 4π²r³/GM</div>
+          <div class="card-desc">Kepler's third law relating orbital period to radius.</div>
+          <div class="card-vars"><span class="var-tag">T = period</span><span class="var-tag">r = orbital
+              radius</span><span class="var-tag">M = central mass</span></div>
+        </div>
+        <div class="card">
+          <div class="card-name">Escape Velocity</div>
+          <div class="card-formula">v_e = √(2GM/r)</div>
+          <div class="card-desc">Minimum speed to escape a body's gravitational field.</div>
+          <div class="card-vars"><span class="var-tag">G = const.</span><span class="var-tag">M = mass of
+              body</span><span class="var-tag">r = radius</span></div>
+        </div>
+        <div class="card">
+          <div class="card-name">Gravitational PE</div>
+          <div class="card-formula">U = −GMm/r</div>
+          <div class="card-desc">Potential energy of mass m in field of M (reference at ∞).</div>
+          <div class="card-vars"><span class="var-tag">G = const.</span><span class="var-tag">M, m = masses</span><span
+              class="var-tag">r = separation</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════ MODERN PHYSICS ═══ -->
+    <section class="topic" id="modern">
+      <div class="topic-header">
+        <div class="topic-icon ic-modern">⚛️</div>
+        <div class="topic-title">Modern Physics <span>Quantum · Photoelectric · de Broglie · Bohr</span></div>
+        <div class="topic-divider"></div>
+      </div>
+      <div class="formula-grid">
+        <div class="card">
+          <div class="card-name">Planck's Equation</div>
+          <div class="card-formula">E = hf = hc/λ</div>
+          <div class="card-desc">Energy of a photon in terms of frequency or wavelength.</div>
+          <div class="card-vars"><span class="var-tag">h = 6.626×10⁻³⁴ J·s</span><span class="var-tag">f =
+              frequency</span><span class="var-tag">c = 3×10⁸ m/s</span></div>
+        </div>
+        <div class="card">
+          <div class="card-name">Photoelectric Effect</div>
+          <div class="card-formula">KE_max = hf − φ</div>
+          <div class="card-desc">Maximum kinetic energy of emitted electrons; φ = work function.</div>
+          <div class="card-vars"><span class="var-tag">h = Planck const.</span><span class="var-tag">f =
+              frequency</span><span class="var-tag">φ = work function</span></div>
+        </div>
+        <div class="card">
+          <div class="card-name">de Broglie Wavelength</div>
+          <div class="card-formula">λ = h/p = h/mv</div>
+          <div class="card-desc">Wave nature of matter; wavelength associated with moving particle.</div>
+          <div class="card-vars"><span class="var-tag">h = Planck const.</span><span class="var-tag">p = momentum</span>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-name">Heisenberg Uncertainty</div>
+          <div class="card-formula">ΔxΔp ≥ ℏ/2</div>
+          <div class="card-desc">Fundamental limit on simultaneous precision of position and momentum.</div>
+          <div class="card-vars"><span class="var-tag">ℏ = h/2π</span><span class="var-tag">Δx = pos.
+              uncertainty</span><span class="var-tag">Δp = mom. uncertainty</span></div>
+        </div>
+        <div class="card">
+          <div class="card-name">Bohr Radius</div>
+          <div class="card-formula">rₙ = n²a₀</div>
+          <div class="card-desc">Orbital radius of hydrogen electron at quantum number n.</div>
+          <div class="card-vars"><span class="var-tag">a₀ = 0.529 Å</span><span class="var-tag">n = principal quantum
+              no.</span></div>
+        </div>
+        <div class="card">
+          <div class="card-name">Hydrogen Energy Levels</div>
+          <div class="card-formula">Eₙ = −13.6/n² eV</div>
+          <div class="card-desc">Energy of electron in nth energy level of hydrogen atom.</div>
+          <div class="card-vars"><span class="var-tag">n = principal quantum no.</span><span class="var-tag">1 eV =
+              1.6×10⁻¹⁹ J</span></div>
+        </div>
+        <div class="card">
+          <div class="card-name">Mass-Energy Equivalence</div>
+          <div class="card-formula">E = mc²</div>
+          <div class="card-desc">Rest mass energy; fundamental result of special relativity.</div>
+          <div class="card-vars"><span class="var-tag">m = mass</span><span class="var-tag">c = 3×10⁸ m/s</span></div>
+        </div>
+        <div class="card">
+          <div class="card-name">Compton Scattering</div>
+          <div class="card-formula">Δλ = (h/mₑc)(1 − cosθ)</div>
+          <div class="card-desc">Wavelength shift when photon scatters off an electron.</div>
+          <div class="card-vars"><span class="var-tag">h = Planck const.</span><span class="var-tag">mₑ = electron
+              mass</span><span class="var-tag">θ = scatter angle</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════ NUCLEAR ═══ -->
+    <section class="topic" id="nuclear">
+      <div class="topic-header">
+        <div class="topic-icon ic-nuclear">☢️</div>
+        <div class="topic-title">Nuclear Physics <span>Radioactivity · Decay · Binding Energy</span></div>
+        <div class="topic-divider"></div>
+      </div>
+      <div class="formula-grid">
+        <div class="card">
+          <div class="card-name">Radioactive Decay Law</div>
+          <div class="card-formula">N = N₀e^(−λt)</div>
+          <div class="card-desc">Number of undecayed nuclei decreasing exponentially with time.</div>
+          <div class="card-vars"><span class="var-tag">N₀ = initial nuclei</span><span class="var-tag">λ = decay
+              constant</span><span class="var-tag">t = time</span></div>
+        </div>
+        <div class="card">
+          <div class="card-name">Half-Life</div>
+          <div class="card-formula">t₁/₂ = ln2/λ = 0.693/λ</div>
+          <div class="card-desc">Time for half of the radioactive nuclei to decay.</div>
+          <div class="card-vars"><span class="var-tag">λ = decay constant</span><span class="var-tag">ln2 ≈ 0.693</span>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-name">Activity</div>
+          <div class="card-formula">A = λN</div>
+          <div class="card-desc">Rate of nuclear decay (disintegrations per second).</div>
+          <div class="card-vars"><span class="var-tag">A = activity (Bq)</span><span class="var-tag">λ = decay
+              constant</span><span class="var-tag">N = nuclei count</span></div>
+        </div>
+        <div class="card">
+          <div class="card-name">Binding Energy</div>
+          <div class="card-formula">BE = Δmc²</div>
+          <div class="card-desc">Energy released when nucleons bind to form a nucleus; Δm = mass defect.</div>
+          <div class="card-vars"><span class="var-tag">Δm = mass defect</span><span class="var-tag">c = speed of
+              light</span></div>
+        </div>
+        <div class="card">
+          <div class="card-name">Q-Value of Reaction</div>
+          <div class="card-formula">Q = (m_reactants − m_products)c²</div>
+          <div class="card-desc">Energy released in a nuclear reaction from mass difference.</div>
+          <div class="card-vars"><span class="var-tag">m = masses in amu</span><span class="var-tag">c² = 931.5
+              MeV/amu</span></div>
+        </div>
+        <div class="card">
+          <div class="card-name">Nuclide Notation</div>
+          <div class="card-formula">ᴬ_Z X</div>
+          <div class="card-desc">Nucleus X with mass number A and atomic number Z.</div>
+          <div class="card-vars"><span class="var-tag">A = protons + neutrons</span><span class="var-tag">Z = proton
+              number</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════ RELATIVITY ═══ -->
+    <section class="topic" id="relativity">
+      <div class="topic-header">
+        <div class="topic-icon ic-relativity">🌌</div>
+        <div class="topic-title">Special Relativity <span>Time Dilation · Length Contraction · Lorentz</span></div>
+        <div class="topic-divider"></div>
+      </div>
+      <div class="formula-grid">
+        <div class="card">
+          <div class="card-name">Lorentz Factor</div>
+          <div class="card-formula">γ = 1/√(1 − v²/c²)</div>
+          <div class="card-desc">Relativistic factor; approaches ∞ as v → c.</div>
+          <div class="card-vars"><span class="var-tag">v = relative velocity</span><span class="var-tag">c = speed of
+              light</span></div>
+        </div>
+        <div class="card">
+          <div class="card-name">Time Dilation</div>
+          <div class="card-formula">Δt = γΔt₀</div>
+          <div class="card-desc">Moving clocks run slow relative to a stationary observer.</div>
+          <div class="card-vars"><span class="var-tag">Δt₀ = proper time</span><span class="var-tag">γ = Lorentz
+              factor</span></div>
+        </div>
+        <div class="card">
+          <div class="card-name">Length Contraction</div>
+          <div class="card-formula">L = L₀/γ</div>
+          <div class="card-desc">Moving objects appear shorter along direction of motion.</div>
+          <div class="card-vars"><span class="var-tag">L₀ = proper length</span><span class="var-tag">γ = Lorentz
+              factor</span></div>
+        </div>
+        <div class="card">
+          <div class="card-name">Relativistic Momentum</div>
+          <div class="card-formula">p = γmv</div>
+          <div class="card-desc">Momentum of a particle increases with velocity relativistically.</div>
+          <div class="card-vars"><span class="var-tag">γ = Lorentz factor</span><span class="var-tag">m = rest
+              mass</span><span class="var-tag">v = velocity</span></div>
+        </div>
+        <div class="card">
+          <div class="card-name">Relativistic Energy</div>
+          <div class="card-formula">E = γmc²</div>
+          <div class="card-desc">Total relativistic energy of a moving particle.</div>
+          <div class="card-vars"><span class="var-tag">γ = Lorentz factor</span><span class="var-tag">m = rest
+              mass</span></div>
+        </div>
+        <div class="card">
+          <div class="card-name">Energy–Momentum Relation</div>
+          <div class="card-formula">E² = (pc)² + (mc²)²</div>
+          <div class="card-desc">Fundamental relativistic relation; for photon: E = pc.</div>
+          <div class="card-vars"><span class="var-tag">p = momentum</span><span class="var-tag">m = rest
+              mass</span><span class="var-tag">c = light speed</span></div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    ✦ Physics Formulas Reference &nbsp;|&nbsp; All Topics &nbsp;|&nbsp; From Mechanics to Relativity
+  </footer>
+
+  <button id="scrollTop" title="Back to top">↑</button>
+  <script src="physics.js"></script>
+</body>
+
+
+</html>
